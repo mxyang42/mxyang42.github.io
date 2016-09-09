@@ -1,2 +1,2 @@
-# learningdiffgeo.github.io
-Notes for the Differential Geometry Learning Seminar in Fall 2016
+# diffgeofall16
+Notes for the Differential Geometry Student Seminar in Fall 2016 at University of Waterloo
