@@ -1,6 +1,0 @@
-{
-  "name": "Differential Geometry Learning Seminar",
-  "tagline": "Notes for the Differential Geometry Learning Seminar in Fall 2016",
-  "body": "### List of talks and speakers\r\nTitle | Speaker | Date | Location | Notes\r\n------|---------|------|----------|------\r\nCurves | M. Yang | Sept 8 | MC 5403 | [Curves](https://github.com/leafa/learningdiffgeo.github.io/blob/master/docs/curves.pdf)\r\nSurfaces | T. Kolomatski | Sept 15 | TBA | Surfaces\r\n\r\n### Authors and Contributors\r\nThis seminar is jointly run by C. Dai, T. Kolomatski, and M. Yang\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
