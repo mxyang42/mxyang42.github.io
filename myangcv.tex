@@ -1,0 +1,322 @@
+% LaTeX Curriculum Vitae Template
+%
+% Copyright (C) 2004-2009 Jason Blevins <jrblevin@sdf.lonestar.org>
+% http://jblevins.org/projects/cv-template/
+%
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely. No attribution is
+% required in any resulting documents. I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[letterpaper]{article}
+
+\usepackage[hidelinks,bookmarks=true]{hyperref}
+\usepackage[numbered]{bookmark}
+\usepackage{geometry}
+
+% Comment the following lines to use the default Computer Modern font
+% instead of the Palatino font provided by the mathpazo package.
+% Remove the 'osf' bit if you don't like the old style figures.
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
+
+% Used for enumerating in reverse order
+\usepackage{etaremune}
+
+% Set your name here
+\def\name{Mengxue Yang}
+
+% Replace this with a link to your CV if you like, or set it empty
+% (as in \def\footerlink{}) to remove the link in the footer:
+\def\footerlink{}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = blue,
+  pdfauthor = {\name},
+  pdfkeywords = {mathematics},
+  pdftitle = {\name: Curriculum Vitae},
+  pdfsubject = {Curriculum Vitae},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.25in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+% Bookmark sections
+\makeatletter
+\newcommand*{\sectionbookmark}[1][]{ 
+  \bookmark[ 
+    level=section, 
+    dest=\@currentHref, 
+    #1 
+  ] 
+}
+\makeatother
+
+\begin{document}
+
+\sectionbookmark{Contact information}
+% Place name at left
+{\huge \name}
+% \href{http://homepages.math.uic.edu/~myang59/}{\huge \name}
+
+% Alternatively, print name centered and bold:
+%\centerline{\huge \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.45\linewidth}
+  % \href{https://www.uic.edu/}{University of Illinois at Chicago} \\
+  University of Illinois at Chicago \\
+  Dept of Math, Stat, \& Comp Sci \\
+  851 S Morgan St \\
+  Chicago, IL 60607 
+\end{minipage}  \hspace{0.25in}
+\begin{minipage}{0.45\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (312) 996-3041 \\
+    Email: & \texttt{myang59@uic.edu} \\
+  \end{tabular}
+\end{minipage} 
+
+\section*{\sc Education}
+\sectionbookmark{Education}
+
+\begin{itemize}
+\item {\bf University of Heidelberg}, Germany \hfill expected Feb 2022 -- Aug 2022 \\
+  Visiting scholar 
+  
+\item {\bf University of Illinois at Chicago}, USA \hfill 2017 -- expected Jan 13, 2022 \\ 
+  Ph.D. Candidate in Mathematics \\
+  Thesis: Generalized opers (in progress) \\
+  Advisor: Laura Schaposnik
+\item {\bf University of Waterloo}, Canada \hfill 2012 -- 2017 \\
+  B.M. Honours Pure Mathematics and Honours Computer Science, Co-op Program \\
+  Degree Honours: With Distinction
+\end{itemize}
+
+\section*{\sc Papers and Preprints}
+\sectionbookmark{Papers and Preprints}
+
+\begin{itemize}
+\item {\bf A comparison of generalized opers and $(G,P)$-opers}, \emph{Indian J Pure Appl Math (2021).} \href{https://doi.org/10.1007/s13226-021-00170-0}{doi:\-10.\-1007/\-s13226-021-00170-0}
+
+\item {\bf On the generalized $\mbox{SO}(2n,\mathbb{C})$-opers}, with Indranil Biswas and Laura Schaposnik, \emph{Ann Glob Anal Geom (2021).} \href{https://arxiv.org/abs/2005.08446}{doi:\-10.\-1007/\-s10455-021-09783-4}
+
+\item {\bf Generalized $B$-opers}, with Indranil Biswas and Laura Schaposnik, \emph{SIGMA 16 (2020).} \href{https://www.emis.de/journals/SIGMA/2020/041/}{doi:\-10.\-3842/\-SIGMA.\-2020.\-041}
+\end{itemize}
+
+\section*{\sc Teaching Experience}
+\sectionbookmark{Teaching Experience}
+
+\begin{itemize}
+\item {\bf Instructor}, UIC \\
+  MATH 104 Mathematical Reasoning Workshop \hfill Fall 2021 \\
+  Young Scholar Program at UIC \hfill Summer 2021 \\
+  MATH 077 Mathematical Reasoning Workshop \hfill Spring 2021 \\
+  Summer Enrichment Workshop for College Algebra \hfill Summer 2020 \\
+  MATH 179 Emerging Scholars Workshop for Calculus I \hfill Fall 2019 
+
+\item  {\bf Teaching Assistant}, UIC \\
+  MATH 105 Mathematical Reasoning \hfill Fall 2021 \\
+  MATH 210 Calculus III \hfill Fall 2020 \\
+  MATH 125 Linear Algebra for Business \hfill Spring 2020 \\ 
+  MATH 180 Calculus I \hfill Fall 2019 \\
+  MATH 165 Calculus for Business \hfill Spring 2019 \\ 
+  MATH 118 Mathematical Reasoning \hfill Fall 2018 \\
+  MATH 181 Calculus II \hfill Summer 2018 \\ 
+  MATH 180 Calculus I \hfill Spring 2018 \\ 
+  MATH 180 Calculus I \hfill Fall 2017
+
+\item {\bf Grader}, UIC \\
+  MATH 414 Real Analysis II \hfill Spring 2021
+  
+\item {\bf Instructional Support Assistant}, Waterloo \\
+  CS 145 Designing Functional Programs (Advanced Version) \hfill Fall 2015
+\end{itemize}
+
+\section*{\sc Honours and Awards}
+\sectionbookmark{Honours and Awards}
+
+\begin{etaremune}
+\item MSCS Teaching Assistant Award, UIC \hfill 2021
+\item Oberwolfach Leibniz Graduate Student, MFO \hfill 2019
+\item Bodmer International Travel Award, UIC \hfill 2019
+\item Teaching Assistantship, UIC \hfill 2017--
+\item Undergraduate Student Research Award, Waterloo \hfill 2016 
+\item Funding Award for Women In Math Summer School, UBC \hfill 2016
+\item Undergraduate Student Research Award (x2), Waterloo \hfill 2016
+\item President's Scholarship of Distinction, Waterloo \hfill 2012
+\end{etaremune}
+
+\section*{\sc Talks}
+\sectionbookmark{Talks}
+
+\begin{etaremune}
+\item \emph{Complex projective structures}, Graduate Geometry/Topology Seminar, UIC, Oct 2021
+
+  % In this talk we will study the space of projective structures on a Riemann surface $X$. We will see that a projective structure $Z$ can be repackaged as a development-holonomy pair $(f,\rho)$ where $f: \tilde{Z} \to \CP^1$ is a locally Mobius immersion and $\rho: \pi_1(X) \to \PSL(2,\C)$ is a holonomy map. If time permits we will see that the space of projective structures forms an affine space over the space of quadratic differentials $H^0(X,K^2)$.
+  
+\item \emph{Intro to Teichmuller theory II: annuli}, Graduate Geometry, Topology and Dynamics Seminar, UIC, Feb 2020
+  
+\item \emph{Stable Higgs bundles}, Graduate Geometry, Topology and Dynamics Seminar, UIC, Nov 2019
+  
+\item \emph{Combinatorics of Coxeter systems}, Graduate Geometry, Topology and Dynamics Seminar, UIC, Sept 2019
+
+% We continue to learn about Coxeter groups following Anne Thomas' "Geometric and topological aspects of Coxeter groups and buildings". There are nice combinatorial properties associated to a Coxeter system. For example, the Cayley graph of a Coxeter system must have nice symmetries and is thus a reflection system. We will visualize everything with D6.
+
+\item \emph{Morse inequalities}, Graduate Geometry, Topology and Dynamics Seminar, UIC, Feb 2019
+  
+% In this talk I will give an elementary proof of the Morse inequalities, which establish a relationship between the homology of a space and the critical points of certain smooth functions on the space plus some local information around these critical points. Some general form of these inequalities can be used to compute the Poincare polynomial (Betti numbers) for moduli spaces of Higgs bundles (of fixed low ranks).
+  
+\item \emph{The Curvature of Higher Dimensional Manifolds, Part I}, Differential Geometry Student Seminar, Waterloo, Oct 2016
+
+% How does a change of coordinates affect the Riemannian metric? When are two Riemannian manifolds locally isometric? Riemann has a famous counting argument that suggests the metric is determined by $n(n-1)/2$ functions. In this talk we will see why this is true. In particular, we will see that for any 2-dimensional subspace of the tangent space, we can find an invariant quadratic function on the space in any normal coordinate system. In an $n$-dimensional tangent space there are $\binom{n}{2}$ 2-dimensional subspaces and hence we have Riemann's claim. In preparation for this goal, we will introduce the exponential map and the Riemann normal coordinates. 
+
+\item \emph{Curves}, Differential Geometry Student Seminar, Waterloo, Sept 2016
+
+\item \emph{Subknots in Ideal Knots, Random Knots, and Knotted Proteins}, Women in Math Summer School, UBC, Aug 2016
+
+\item \emph{The Second Fundamental Form}, Geometry Working Seminar, Waterloo, Aug 2016
+
+% Given a very concrete surface in $\R^3$ , we can use the curvature of a surface curve to define the curvature of the surface at points of the curve in the directions the curve travels in. Although the motivation for the definition relies on curves, the curvature of a surface does not actually depend on specific surface curves. I will formally introduce the notions of normal curvature, principal curvatures, Gaussian curvature, and mean curvature of a surface and show you how to compute them. In the process, I will talk about things like the Gauss map, the shape operator, and the second fundamental form, which lead to the list of curvatures in the previous sentence. I will also discuss some geometric interpretations.
+
+\item \emph{Things I Learned About Gauss--Bonnet}, Canadian Mathematics Undergraduate Conference, University of Victoria, Jul 2016
+
+  % The Gauss-Bonnet theorem is an important theorem in the differential geometry of surfaces. Its statement is easy to understand informally; it says that the overall geometry of a surface is related to the topology of the surface. In particular, we can establish an equality involving the integral of the Gaussian curvature and the Euler characteristic for a surface. This is surprising and has many consequences. This presentation aims to explain Gauss-Bonnet in more details and also give examples of its application.
+
+\item \emph{The Intrinsic Geometry of Surfaces}, Geometry Working Seminar, Waterloo, Jun 2016 
+
+% The goal of this presentation is to understand an important tool used to study intrinsic properties of a surface - the covariant derivative. First we define the covariant derivative and look at how to compute it. Next we see why the tool is appropriate for studying intrinsic geometry. And finally we shall see some applications and generalizations of this tool. 
+
+\item \emph{The Picture Hanging Problem}, Canadian Mathematics Undergraduate Conference, University of Alberta, Jun 2015
+
+% Suppose we have a painting, a string, and some nails for hanging the painting on a wall. Suppose there are $n$ nails. Find a way to hang the painting such that removing any one of the $n$ nails makes it fall. This absurd and seemingly simple puzzle is not so easy to wrap our minds around using brute force. Once we see it in the light of group theory, however, we can easily write down the solution. 
+\end{etaremune}
+
+\section*{\sc Conferences and Workshops attended}
+\sectionbookmark{Conferences and Workshops}
+
+\begin{etaremune}
+\item Riemann surfaces and their moduli spaces, Utah, Feb 2020
+\item Quantum Field Theory and Manifold Invariants, PCMI (with financial support), Jul 2019
+\item Geometric representation theory and low-dimensional topology, Edinburgh, Jun 2019
+\item Geometry and Physics of Higgs bundles, MFO, May 2019
+\item A Workshop on Challenges at the Interface of Hitchin Systems and String Theory, Simons Center, Mar 2019
+\item Workshop on the Geometry and Physics of Higgs bundles IV, Simons Center, Mar 2019
+\item Derived Geometry and Higher Categorical Structures in Geometry and Physics, Fields Institute, Jun 2018
+\item Graduate Workshop in Algebraic Geometry for Women and Mathematicians of Minority Genders, Harvard and MIT, Feb 2018
+\item RTG Workshop on the Geometry and Physics of Higgs bundles II, UIC, Nov 2017
+\end{etaremune}
+
+\section*{\sc Academic Activities}
+\sectionbookmark{Activities}
+
+\begin{etaremune}
+\item {\bf Sonia Kovalevsky day Volunteer}, UIC \hfill 2017-- 
+\item {\bf Pure Math Club Co-VP}, Waterloo \hfill Winter 2017 
+\item {\bf Volunteer Tutor}, Tutoring Beyond Borders \hfill Winter 2017
+\item {\bf Women in Computer Science}, Waterloo \hfill Fall 2015
+\item {\bf Orientation Black Tie Leader}, Waterloo, \hfill Sept 2014
+\item {\bf MathSoc Website Board}, Waterloo \hfill Fall 2013 
+\item {\bf Volunteer Translator}, Global Voices \hfill 2011 -- 2013
+\item {\bf Volunteer Tutor}, JUMP Math at Branksome Hall \hfill 2010 -- 2011
+\end{etaremune}
+
+\section*{\sc Employment}
+\sectionbookmark{Employment}
+
+\begin{itemize}
+\item {\bf Software Engineer Intern}, Amazon Lab 126 \hfill Summer 2015 
+\item {\bf Software Engineer Intern}, Evertz Microsystems \hfill Summer 2014
+\item {\bf Junior Developer Intern}, PureFacts Financial Solutions \hfill Summer 2013
+\end{itemize}
+
+\section*{\sc Relevant Skills}
+\sectionbookmark{Relevant Skills}
+
+\begin{itemize}
+\item Languages: English, Mandarin, Spanish (Intermediate)
+\item Programmed in: C/C++, Java, Maple, MATLAB, PARI/GP, SageMath, Scala, etc.
+\end{itemize}
+
+% \section*{\sc References}
+% \sectionbookmark{References}
+
+% \begin{minipage}{0.45\linewidth}
+% \subsection*{\sc Research}
+
+% {\bf Laura Schaposnik}, Associate Professor \\
+% Dept of Math, Stat, \& Comp Sci, UIC \\
+% \texttt{schapos@uic.edu} \\
+
+% {\bf Indranil Biswas}, Professor \\
+% Tata Institute of Fundamental Research \\
+% \texttt{indranil29@gmail.com} \\
+
+% {\bf David Dumas}, Professor \\
+% Dept of Math, Stat, \& Comp Sci, UIC \\
+% \texttt{david@dumas.io}
+% \end{minipage}  \hspace{0.25in}
+% \begin{minipage}{0.45\linewidth}
+% \subsection*{\sc Teaching}
+
+% {\bf Jenny Ross}, Director of Pre-Calculus \\
+% Dept of Math, Stat, \& Comp Sci, UIC \\
+% \texttt{jross19@uic.edu} \\
+
+% {\bf Will Perkins}, Associate Professor \\
+% Dept of Math, Stat, \& Comp Sci, UIC \\
+% \texttt{willp@uic.edu} \\
+
+% {\bf Anita Kursell}, Lecturer \\
+% Dept of Math, Stat, \& Comp Sci, UIC \\
+% \texttt{akurse2@uic.edu} 
+% \end{minipage} 
+
+\bigskip
+
+% Footer
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}

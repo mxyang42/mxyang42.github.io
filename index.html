@@ -1,22 +1,56 @@
-<!doctype html>
+<html>
+  <head>
+    <title>Mengxue Yang</title>
+    <meta charset="utf-8"/>
+    <meta name="description" content="Mengxue Yang">
+    <meta name="author" content="Mengxue Yang">
+    <meta name="keywords" content="math,uic,mengxue,mx,yang">
+    <meta name="viewport" content="width=device-width; initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script>
+      MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+      };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1 class="page-title">Mengxue Yang</h1>
+      <hr>
+      <ul class="nav">
+  	<li><a href="./"><b>About</b></a></li>
+  	<li><a href="research.html">Research</a></li>
+        <li><a href="talks.html">Talks</a></li>
+  	<li><a href="teaching.html">Teaching</a></li>
+        <li><a href="travel.html">Travel</a></li>
+      </ul>
+      <hr>
+    </header>
+    <div class="default">
+      <h2>Contact</h2>
+      <p>
+        Email: myang59@uic.edu<br>
+        Office: SEO 731<br>
+        Department website: <a href="https://www.math.uic.edu/people/profile?netid=myang59">Mengxue Yang</a>
+      </p>
 
-<html lang="en">
-<head>
-  <meta charset="utf-8">
+      <h2>About me</h2>
+      <p>
+        I'm a fifth year Ph.D. student at the University of Illinois at Chicago [<a href="http://homepages.math.uic.edu/~myang59/myangcv.pdf">CV</a>]. My advisor is <a href="https://schapos.people.uic.edu/">Laura Schaposnik</a>.  I'm interested in differential and complex geometry, in particular geometric structures on a Riemann surface such as opers and Higgs bundles. I come from Beijing, China, and I spent 9 years studying in Canada. I received my undergraduate degree from the <a href="https://uwaterloo.ca/">University of Waterloo</a>, with a double major in Pure Math and Computer Science. You may wonder how to pronounce my first name -- it roughly sounds like "MUNG-SHOO-EY" -- and it translates to "dream snow" in English. 
+      </p>
+      
+      <h2>Something interesting</h2>
+      <p>
+        I learned the following fun piece of math from teaching the Young Scholar Program at UIC recently. The minimum vertex cover problem asks: for a given graph, find a minimal set of vertices that touch all the edges. This is one of Karp's 21 NP-complete problems. We can find a simple algorithm that outputs a good-enough approximate solution, but it's not what you think it is. The naive greedy algorithm is to always add a vertex of the highest degree to the vertex cover, then remove it from the graph and recurse. However there are graphs on which this algorithm produces vertex covers that are arbitrarily far from the minimal one. That is, $n$ times the size of a minimal cover, for any $n$. 
+      </p>
 
-  <title>Wrong page!</title>
-  <meta name="description" content="Wrong page!">
-  <meta name="author" content="leafa">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
-
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
-
-<body>
-  <script src="js/scripts.js"></script>
-  I think you're lost! But maybe you'd like to check out my blog <a href="http://mxyang42.blogspot.ca/">Poplar</a>. 
-</body>
+      <i><p id="lastUpdate"></p></i>
+      <script>
+        var time = document.lastModified.substring(0,10);
+        var output = "Last updated: " + time;
+        document.getElementById("lastUpdate").innerHTML = output;
+      </script>
+    </div>
+  </body>
 </html>
