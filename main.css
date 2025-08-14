@@ -8,16 +8,17 @@ html, body {
 
 body {
     font-family: "Times New Roman", Times, serif;
+    color: #363636; 
     margin-top: 50px;
     margin-bottom: 50px; 
 }
 
 a {
-    color: #ff5050;
+    color: #ff5050; 
     text-decoration: none;
 }
-a:hover {
-    color: #800000;
+a:hover { 
+    color: #800000; 
 }
 
 hr {
@@ -74,20 +75,25 @@ hr {
     }
 }
 
+/* This will make ALL b tags have a font-weight of 700 */
+b {
+  font-weight: 700;
+}
+
+h1, h2 {
+    color: #121212; 
+}
+
 /* For the himawari image on the homepage */
-.img-container {
+.himawari-container {
   display: flex;
   justify-content: center;
   align-items: center; /* Use this if you also want to center it vertically */
 }
 
-img {
+#himawari {
   max-width: 85%;
   height: auto;
   display: block; 
 }
 
-/* This will make ALL b tags have a font-weight of 700 */
-b {
-  font-weight: 700;
-}
