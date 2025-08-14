@@ -16,7 +16,13 @@ body {
 }
 
 header {
-    background: linear-gradient(to bottom, #B0E0E6, #FFFFFF); 
+    background: linear-gradient(to bottom, #B0E0E6, #FFFFFF);
+}
+
+/* Global margins for page content */
+.page-title, .nav, .default {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 h1, h2 {
@@ -42,8 +48,6 @@ b {
 
 /* Page title is my name */
 .page-title {
-    margin-left: 15%; 
-    margin-right: 15%; 
     padding-top: 30px; 
     padding-bottom: 20px; 
     text-align: left; 
@@ -53,10 +57,8 @@ b {
 /* Navigation bar */
 .nav{
     list-style: none; 
-    margin-left: 15%;
-    margin-right: 15%; 
     padding: 0; 
-    text-align: left;
+    text-align: left; 
     font-size: 18px; 
 }
 .nav li{
@@ -68,21 +70,33 @@ b {
     margin-right: 15px; 
 }
 
-/* Main text body */
-.default {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
 /* Different screen sizes */
 @media print, screen and (max-width: 640px) {
     body {
 	word-wrap: break-word; 
     }
+
+    .page-title, .nav, .nav a {
+        text-align: center;
+    }
         
-    .page-title, .default, .nav, .nav a{
+    .page-title, .default, .nav, .nav a {
         margin-left: 8px; 
         margin-right: 8px; 
+    }
+}
+
+@media print, screen and (min-width: 1440px) {
+    .page-title, .nav, .default {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media print, screen and (min-width: 2560px) {
+    .page-title, .nav, .default {
+        margin-left: 30%;
+        margin-right: 30%;
     }
 }
 
