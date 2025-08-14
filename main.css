@@ -1,21 +1,31 @@
 html, body {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    font-weight: 300;
-    line-height: 1.5;
+    min-height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    font-weight: 300; 
+    line-height: 1.5; 
+    margin: 0; 
+    padding: 0; 
 }
 
 body {
     font-family: "Times New Roman", Times, serif;
     color: #363636; 
-    margin-top: 50px;
+    /* margin-top: 50px; */
     margin-bottom: 50px; 
+}
+
+header {
+    background: linear-gradient(to bottom, #B0E0E6, #FFFFFF); 
+}
+
+h1, h2 {
+    color: #121212; 
 }
 
 a {
     color: #ff5050; 
-    text-decoration: none;
+    text-decoration: none; 
 }
 a:hover { 
     color: #800000; 
@@ -25,10 +35,17 @@ hr {
   border-width: 1px;
 }
 
+/* This will make ALL b tags have a font-weight of 700 */
+b {
+  font-weight: 700; 
+}
+
 .page-title {
     margin-left: 15%; 
-    text-align: left;
-    font-weight: 100;
+    margin-right: 15%; 
+    padding: 15px; 
+    text-align: left; 
+    font-weight: 100; 
 }
 
 .default {
@@ -39,49 +56,30 @@ hr {
 .nav{
     list-style: none; 
     margin-left: 15%;
+    margin-right: 15%; 
     padding: 0; 
-    text-align: left; 
+    text-align: left;
+    font-size: 18px; 
 }
 .nav li{
-    display: inline;
+    display: inline; 
 }
 .nav a{
-    display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
+    display: inline-block; 
+    margin-left: 15px; 
+    margin-right: 15px; 
 }
 
 /* Different screen sizes */
 @media print, screen and (max-width: 640px) {
     body {
-	word-wrap: break-word;
+	word-wrap: break-word; 
     }
         
-    .page-title {
-        margin-left: 0; 
+    .page-title, .default, .nav, .nav a{
+        margin-left: 8px; 
+        margin-right: 8px; 
     }
-
-    .default {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .nav{
-        margin-left: 0;
-    }
-    .nav a{
-        margin-left: 0px;
-        margin-right: 5px; 
-    }
-}
-
-/* This will make ALL b tags have a font-weight of 700 */
-b {
-  font-weight: 700;
-}
-
-h1, h2 {
-    color: #121212; 
 }
 
 /* For the himawari image on the homepage */
@@ -92,8 +90,8 @@ h1, h2 {
 }
 
 #himawari {
-  max-width: 85%;
-  height: auto;
+  max-width: 85%; 
+  height: auto; 
   display: block; 
 }
 
