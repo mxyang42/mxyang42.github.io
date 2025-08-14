@@ -13,11 +13,11 @@ body {
 }
 
 a {
-    color: #ff5050; 
+    color: #ff5050;
     text-decoration: none;
 }
-a:hover { 
-    color: #800000; 
+a:hover {
+    color: #800000;
 }
 
 hr {
