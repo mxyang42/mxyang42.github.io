@@ -40,19 +40,17 @@ b {
   font-weight: 700; 
 }
 
+/* Page title is my name */
 .page-title {
     margin-left: 15%; 
     margin-right: 15%; 
-    padding: 15px; 
+    padding-top: 30px; 
+    padding-bottom: 20px; 
     text-align: left; 
     font-weight: 100; 
 }
 
-.default {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
+/* Navigation bar */
 .nav{
     list-style: none; 
     margin-left: 15%;
@@ -68,6 +66,12 @@ b {
     display: inline-block; 
     margin-left: 15px; 
     margin-right: 15px; 
+}
+
+/* Main text body */
+.default {
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 /* Different screen sizes */
