@@ -73,3 +73,21 @@ hr {
         margin-right: 5px; 
     }
 }
+
+/* For the himawari image on the homepage */
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Use this if you also want to center it vertically */
+}
+
+img {
+  max-width: 85%;
+  height: auto;
+  display: block; 
+}
+
+/* This will make ALL b tags have a font-weight of 700 */
+b {
+  font-weight: 700;
+}
