@@ -1,5 +1,5 @@
 html, body {
-    min-height: 100vh; 
+    min-height: 100vh; /* Fill all visual height */
     display: flex; 
     flex-direction: column; 
     font-weight: 300;
@@ -9,22 +9,19 @@ html, body {
     padding: 0; 
 }
 
-html {
-    background-color: #B0E0E6;
-}
-
 body {
     font-family: "Times New Roman", Times, serif;
     color: #363636;
-    /* white background for visual content */
-    background-color: white;
+    background-color: #B0E0E6;
+    /* Try to cover safe area on ios */
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
     /* Don't react to double click */
-    touch-action: manipulation;
+    /* touch-action: manipulation; */
 }
 
 header { 
     background: linear-gradient(to bottom, #B0E0E6, #FFFFFF);
-    padding-top: calc(env(safe-area-inset-top) + 30px);
+    padding-top: 30px; 
     padding-bottom: 10px; 
 }
 
@@ -64,8 +61,8 @@ ul {
     padding-top: 10px; 
     padding-bottom: 10px; 
     text-align: left; 
-    font-weight: 100;
-    font-family: "Times New Roman", Times, serif;
+    font-weight: 100; 
+    font-family: "Times New Roman", Times, serif; 
 }
 
 /* Navigation bar */
@@ -87,9 +84,11 @@ ul {
     padding-bottom: 3px; 
 }
 
-/* Leave a space after the main text body */
+/* The main content */
 .default {
-    padding-bottom: 50px; 
+    flex: 1; /* fills remaining space */
+    padding-bottom: 50px;
+    background-color: white; 
 }
 
 /* Different screen sizes */
@@ -143,6 +142,7 @@ ul {
         padding-bottom: 20mm;
     }
     html, body {
+        min-height: 100%; /* Don't print more white space than needed */
         display: block;
     }
     header {
@@ -168,4 +168,3 @@ ul {
     height: auto; 
     display: block; 
 }
-
