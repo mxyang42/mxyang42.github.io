@@ -1,91 +1,108 @@
-<html>
-  <head>
-    <title>Mengxue Yang</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script>
-      MathJax = {
-      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
-      };
-    </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>    
-  </head>
-  <body>
-    <header>
-      <h1 class="page-title">Mengxue Yang</h1>
-      <hr>
-      <ul class="nav">
-  	<li><a href="index.html">About</a></li>
-  	<li><a href="research.html">Research</a></li>
-        <li><a href="talks.html">Talks</a></li>
-  	<li><a href="teaching.html">Teaching</a></li>
-        <li><a href="travel.html"><b>Travel</b></a></li>
-      </ul>
-      <hr>
-    </header>
-    
-    <div class="default">
-      <h2>Upcoming trips</h2>
-      <ul>
-        <li>
-          Geometric Structures and Stability, ICTS-TIFR, Bengaluru,
-          <time datetime="2026-02">Feb 2026</time>
-        </li>
-      </ul>
-      
-      <h2>Past trips</h2>
-      <ul>
-        <li>
-          Workshop on Character Varieties and Higgs Bundles, University of Costa Rica, Guanacaste,
-          <time datetime="2025-08">Aug 2025</time>
-        </li>
-        <li>
-          Beijing–Shanghai Summer School in Mathematics, SIMIS,
-          <time datetime="2025-07">Jul 2025</time>
-        </li>
-        <li>
-          Higher Rank Geometric Structures, Higgs Bundles and Physics, IHP,
-          <time datetime="2025-05">May 2025</time>
-        </li>
-        <li>
-          Seoul–Tokyo Conference in Mathematics, KIAS,
-          <time datetime="2024-11">Nov 2024</time>
-        </li>
-        <li>
-          Simons Math Summer Workshop, SCGP,
-          <time datetime="2024-07">Jul 2024</time>
-        </li>
-        <li>
-          Mini-workshop on Higgs Bundles, Osaka University,
-          <time datetime="2024-05">May 2024</time>
-        </li>
-        <li>International Workshop on Higher Teichm&uuml;ller Theory, CIM, May 2024</li>
-        <li>Tsinghua–Tokyo workshop on Calabi–Yau, Fujiyoshida, Jan 2024</li>
-        <li>MIST 2024 Workshop, CUHK, Jan 2024</li>
-        <li>McKay correspondence, Tilting theory and related topics, IPMU, Dec 2023</li>
-        <li>Complex Lagrangians, Integrable Systems, and Quantization, Oxford, Jun 2023</li>
-        <li>Higgs bundles, character varieties and higher Teichm&uuml;ller spaces, Madrid, May 2023</li>
-        <li>Hitchin system, Langlands duality and mirror symmetry, ICMAT, Apr 2023</li>
-        <li>Moduli spaces and geometric structures (Garc&iacute;a-Prada birthday conference), ICMAT, Sep 2022</li>
-        <li>Minimal surfaces in symmetric spaces and Labourie's conjecture (Log Cabin workshop), Austrans, Aug 2022</li>
-        <li>Riemann surfaces and their moduli spaces, Utah, Feb 2020</li>
-        <li>Quantum Field Theory and Manifold Invariants, PCMI, Jul 2019</li>
-        <li>Geometric representation theory and low-dimensional topology, Edinburgh, Jun 2019</li>
-        <li>Geometry and Physics of Higgs bundles, MFO, May 2019</li>
-        <li>A Workshop on Challenges at the Interface of Hitchin Systems and String Theory, Simons Center, Mar 2019</li>
-        <li>Workshop on the Geometry and Physics of Higgs bundles IV, Simons Center, Mar 2019</li>
-        <li>Derived Geometry and Higher Categorical Structures in Geometry and Physics, Fields Institute, Jun 2018</li>
-        <li>Graduate Workshop in Algebraic Geometry for Women and Mathematicians of Minority Genders, Harvard and MIT, Feb 2018</li>
-        <li>RTG Workshop on the Geometry and Physics of Higgs bundles II, UIC, Nov 2017</li>
-      </ul>
-      
-      <i><p id="lastUpdate"></p></i>
-      <script>
-        var time = document.lastModified.substring(0,10);
-        var output = "Last updated: " + time;
-        document.getElementById("lastUpdate").innerHTML = output;
-      </script>  
-    </div>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Make a favicon -->
+        <script>
+         const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#5F9EA0"/><text x="50%" y="50%" dominant-baseline="central" text-anchor="middle" font-size="60" font-family="Times" fill="white">M</text></svg>`.trim();
+         const link = document.createElement("link");
+         link.rel = "icon";
+         link.type = "image/svg+xml";
+         link.href = "data:image/svg+xml," + encodeURIComponent(svg);
+         document.head.appendChild(link);
+        </script>
+        <title>Travel - Mengxue Yang</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script>
+         MathJax = {
+             tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+         };
+        </script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>    
+    </head>
+    <body>
+        <header>
+            <h1 class="page-title">Mengxue Yang</h1>
+            <hr>
+            <ul class="nav">
+  	        <li><a href="index.html">About</a></li>
+  	        <li><a href="research.html">Research</a></li>
+                <li><a href="talks.html">Talks</a></li>
+  	        <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="travel.html"><strong>Travel</strong></a></li>
+            </ul>
+            <hr>
+        </header>
+        
+        <div class="default">
+            <h3>Upcoming trips</h3>
+            <ul>
+                <li>
+                    Geometric Structures and Stability, ICTS-TIFR, Bengaluru,
+                    <time datetime="2026-02">Feb 2026</time>
+                </li>
+            </ul>
+            
+            <h3>Past trips</h3>
+            <ul>
+                <li>
+                    Workshop on Character Varieties and Higgs Bundles, University of Costa Rica, Guanacaste,
+                    <time datetime="2025-08">Aug 2025</time>
+                </li>
+                <li>
+                    Beijing–Shanghai Summer School in Mathematics, SIMIS,
+                    <time datetime="2025-07">Jul 2025</time>
+                </li>
+                <li>
+                    Higher Rank Geometric Structures, Higgs Bundles and Physics, IHP,
+                    <time datetime="2025-05">May 2025</time>
+                </li>
+                <li>
+                    Seoul–Tokyo Conference in Mathematics, KIAS,
+                    <time datetime="2024-11">Nov 2024</time>
+                </li>
+                <li>
+                    Simons Math Summer Workshop, SCGP,
+                    <time datetime="2024-07">Jul 2024</time>
+                </li>
+                <li>
+                    Mini-workshop on Higgs Bundles, Osaka University,
+                    <time datetime="2024-05">May 2024</time>
+                </li>
+                <li>International Workshop on Higher Teichm&uuml;ller Theory, CIM, May 2024</li>
+                <li>Tsinghua–Tokyo workshop on Calabi–Yau, Fujiyoshida, Jan 2024</li>
+                <li>MIST 2024 Workshop, CUHK, Jan 2024</li>
+                <li>McKay correspondence, Tilting theory and related topics, IPMU, Dec 2023</li>
+                <li>Complex Lagrangians, Integrable Systems, and Quantization, Oxford, Jun 2023</li>
+                <li>Higgs bundles, character varieties and higher Teichm&uuml;ller spaces, Madrid, May 2023</li>
+                <li>Hitchin system, Langlands duality and mirror symmetry, ICMAT, Apr 2023</li>
+                <li>Moduli spaces and geometric structures (Garc&iacute;a-Prada birthday conference), ICMAT, Sep 2022</li>
+                <li>Minimal surfaces in symmetric spaces and Labourie's conjecture (Log Cabin workshop), Austrans, Aug 2022</li>
+                <li>Riemann surfaces and their moduli spaces, Utah, Feb 2020</li>
+                <li>Quantum Field Theory and Manifold Invariants, PCMI, Jul 2019</li>
+                <li>Geometric representation theory and low-dimensional topology, Edinburgh, Jun 2019</li>
+                <li>Geometry and Physics of Higgs bundles, MFO, May 2019</li>
+                <li>A Workshop on Challenges at the Interface of Hitchin Systems and String Theory, Simons Center, Mar 2019</li>
+                <li>Workshop on the Geometry and Physics of Higgs bundles IV, Simons Center, Mar 2019</li>
+                <li>Derived Geometry and Higher Categorical Structures in Geometry and Physics, Fields Institute, Jun 2018</li>
+                <li>Graduate Workshop in Algebraic Geometry for Women and Mathematicians of Minority Genders, Harvard and MIT, Feb 2018</li>
+                <li>RTG Workshop on the Geometry and Physics of Higgs bundles II, UIC, Nov 2017</li>
+            </ul>
+            
+            <br><hr>
+
+            <p><em id="lastUpdate"></em></p>
+            <script>
+             const lastMod = new Date(document.lastModified);
+             const formattedDate = lastMod.toLocaleDateString(undefined, {
+                 year: 'numeric',
+                 month: 'long',
+                 day: 'numeric'
+             });
+             document.getElementById("lastUpdate").textContent =
+                 "Last updated: " + formattedDate;
+            </script>
+        </div>
+    </body>
 </html>
