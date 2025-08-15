@@ -12,16 +12,15 @@ html, body {
 body {
     font-family: "Times New Roman", Times, serif;
     color: #363636;
-    background-color: #B0E0E6;
-    /* Try to cover safe area on ios */
-    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
-    /* Don't react to double click */
-    /* touch-action: manipulation; */
+    background-color: white; 
 }
 
 header { 
-    background: linear-gradient(to bottom, #B0E0E6, #FFFFFF);
-    padding-top: 30px; 
+    background: linear-gradient(to bottom, #B0E0E6, #FFFFFF); 
+    /* Try to cover safe area on ios */
+    padding-top: 30px;
+    padding-top: calc(constant(safe-area-inset-top) + 30px);
+    padding-top: calc(env(safe-area-inset-top) + 30px);
     padding-bottom: 10px; 
 }
 
@@ -87,7 +86,7 @@ ul {
 /* The main content */
 .default {
     flex: 1; /* fills remaining space */
-    padding-bottom: 50px;
+    padding-bottom: 50px; 
     background-color: white; 
 }
 
@@ -95,8 +94,6 @@ ul {
 @media screen and (max-width: 640px) {
     body {
 	word-wrap: break-word;
-        line-height: 1.5; 
-        font-size: 16px;
     }
     header, .page-title {
         padding-top: 0; 
@@ -117,7 +114,7 @@ ul {
 
 @media screen and (min-width: 1440px) {
     body {
-        font-size: 18px; 
+        font-size: 18px;
     }    
     .page-title, .nav, .default {
         padding-left: 20%;
